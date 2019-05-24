@@ -86,11 +86,15 @@ h2 {
 }
 
 #title__p2 {
-    width: 128.52px;
+    width: 128.55px;
 }
 
 #title__p2.-open, #title__p2 .title__part-wrap {
-    width: 1170.36px;
+	width: 1170.46px;
+}
+
+#title__p2.-open, #title__p2.-open .title__part-wrap {
+	max-width: 100vw;
 }
 
 #title__p3, #title__p3 .title__part-wrap {
