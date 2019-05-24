@@ -20,3 +20,33 @@ h1 {
 	margin: 0px;
 	padding: 0.67em 0em;
 }
+
+.anim, .slide {
+	transition-duration: 0.4s;
+}
+
+.centerizer {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.centerizer--auto-size {
+	height: auto;
+	width: auto;
+}
+
+.centerizer-content {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+}
+
+.slide--done {
+	opacity: 0;
+}
