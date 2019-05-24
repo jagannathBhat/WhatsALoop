@@ -22,9 +22,19 @@
 		}, 300);
 	};
 
+	let slide1action0 = () => {
+		document.querySelectorAll("h2.anim").forEach((a, b) => {
+			if(b > 1)
+				a.classList.add("shrunk");
+		});
+		document.querySelector("h2.anim").classList.remove("shrunk");
+		document.querySelector("h1").innerText = "With loop";
+	};
+
 	let actions = [
 		slide0action0,
-		nextSlide
+		nextSlide,
+		slide1action0
 	];
 
 	document.addEventListener("keydown", event => {
