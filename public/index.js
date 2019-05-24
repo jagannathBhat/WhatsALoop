@@ -24,7 +24,7 @@
 
 	let slide1action0 = () => {
 		document.querySelectorAll("h2.anim").forEach((a, b) => {
-			if(b > 1)
+			if (b > 1)
 				a.classList.add("shrunk");
 		});
 		document.querySelector("h2.anim").classList.remove("shrunk");
@@ -42,5 +42,9 @@
 			return;
 		if (event.keyCode === 39 || event.keyCode === 34)
 			nextAction();
+	});
+
+	document.addEventListener("click", event => {
+		nextAction();	
 	});
 })();
