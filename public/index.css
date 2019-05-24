@@ -24,11 +24,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 54px;
-	margin: 0px;
-	padding: 0.67em 0em;
 }
 
-.anim, .slide {
+h2 {
+	font-size: 36px;
+}
+
+.anim, .slide, .title__part {
 	transition-duration: 0.4s;
 }
 
@@ -56,4 +58,41 @@ h1 {
 
 .slide--done {
 	opacity: 0;
+}
+
+.title__part {
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+.title__part-wrap {
+    width: initial;
+}
+
+#title {
+    font-size: 48px;
+}
+
+#title__p1, #title__p1 .title__part-wrap {
+    width: 157.25px;
+}
+
+#title__p1.-close {
+    width: 0px;
+}
+
+#title__p2 {
+    width: 128.52px;
+}
+
+#title__p2.-open, #title__p2 .title__part-wrap {
+    width: 1170.36px;
+}
+
+#title__p3, #title__p3 .title__part-wrap {
+    width: 21.8px;
+}
+
+#title__p3.-close {
+    width: 0px;
 }
